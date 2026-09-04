@@ -1,0 +1,23 @@
+# Active MHD Control of Supersonic SBLI Unsteadiness
+
+A 2D compressible finite-difference solver simulating Mach 2.5 shock-wave/boundary-layer interactions (SBLI) over a compression ramp, implementing a low-Re_m Lorentz force momentum sink for active flow control.
+
+## Project Files
+- `sbli_mhd_solver`: Core Python script containing the 2D compressible Navier-Stokes/finite-difference solver, Lorentz force implementation, and spectral analysis pipeline.
+- `project_report.pdf`: Comprehensive project report detailing the governing equations, numerical methods, separation bubble dynamics, and spectral attenuation results.
+
+## Key Results
+- Successfully simulated separation bubble dynamics under Mach 2.5 conditions over a compression ramp.
+- Integrated a low-Re_m Lorentz force momentum sink, achieving an 11.4 dB peak power reduction at the targeted 50 Hz separation shock breathing mode (St ~ 0.03).
+
+## Requirements
+- Python 3.x
+- NumPy
+- SciPy
+- Numba
+- Matplotlib
+
+## Usage
+Run the script to execute the solver and generate flow-field and spectral attenuation plots:
+```bash
+python sbli_mhd_solver
